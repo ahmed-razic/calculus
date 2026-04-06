@@ -7,6 +7,9 @@ f4(x) = log(x)/log(2)
 f5(x) = log(x)/log(3)
 f6(x) = log(x)/log(5)
 
+f7(x) = log(x)
+f8(x) = exp(1)**x
+
 
 set terminal qt 0
 set xlabel "x"
@@ -25,7 +28,9 @@ f2(x) with lines title "3^x", \
 f3(x) with lines title "5^x", \
 f4(x) with lines title "log(x)/log(2)", \
 f5(x) with lines title "log(x)/log(3)", \
-f6(x) with lines title "log(x)/log(5)"
+f6(x) with lines title "log(x)/log(5)", \
+f7(x) with lines title "ln(x)" lw 3 lc "black", \
+f8(x) with lines title "e^x" lw 3 lc "black"
 
 pause -1
 
