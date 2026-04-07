@@ -1,0 +1,23 @@
+#Define a function
+f1(x) = sqrt(1/(4 - x))
+f2(x) = sqrt(x - 3)
+f3(x) = sqrt(x)
+
+set terminal qt 0
+set xlabel "x"
+set ylabel "f(x)"
+set xtics 1
+set ytics 1
+set grid
+set size ratio 1
+set xrange [0:7]
+set yrange [-3:4]
+set arrow nohead from 3,-10 to 3,10 dashtype 7 lc "green"
+set arrow nohead from -8,0 to 12,0 dashtype 7 lc "green"
+
+
+plot f1(x) with lines, f2(x) with lines, f3(x) with lines
+
+pause -1
+
+#EOF
