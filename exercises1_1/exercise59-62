@@ -1,0 +1,54 @@
+#Define a function
+f59(x) = sin(2*x)
+f60(x) = (sin(x))**2
+f61(x) = cos(3*x)
+f62(x) = 1 + cos(x)
+
+
+set terminal qt 59
+set xlabel "x"
+set ylabel "f(x)"
+set xtics 1
+set ytics 1
+set grid
+set size ratio 1
+set xrange [-5:5]
+set yrange [-5:5]
+plot f59(x) with lines
+
+set terminal qt 60
+set xlabel "x"
+set ylabel "f(x)"
+set xtics 1
+set ytics 1
+set grid
+set size ratio 1
+set xrange [-5:5]
+set yrange [-5:5]
+plot f60(x) with lines
+
+set terminal qt 61
+set xlabel "x"
+set ylabel "f(x)"
+set xtics 1
+set ytics 1
+set grid
+set size ratio 1
+set xrange [-5:5]
+set yrange [-5:5]
+plot f61(x) with lines
+
+set terminal qt 62
+set xlabel "x"
+set ylabel "f(x)"
+set xtics 1
+set ytics 1
+set grid
+set size ratio 1
+set xrange [-5:5]
+set yrange [-5:5]
+plot f62(x) with lines
+
+pause -1
+
+#EOF
