@@ -1,0 +1,80 @@
+#Define a function
+f53(x) = 1/(x**2 - 1)
+f54(x) = x/(x**2 - 1)
+f55(x) = 1/(x - 1)
+f56(x) = abs(x**3)
+f57(x) = 2*x + 1
+f58(x) = 2*abs(x) + 1
+
+set terminal qt 53
+set xlabel "x"
+set ylabel "f(x)"
+set xtics 1
+set ytics 1
+set grid
+set size ratio 1
+set xrange [-5:5]
+set yrange [-5:5]
+plot f53(x) with lines
+
+set terminal qt 54
+set xlabel "x"
+set ylabel "f(x)"
+set xtics 1
+set ytics 1
+set grid
+set size ratio 1
+set xrange [-5:5]
+set yrange [-5:5]
+plot f54(x) with lines
+
+set terminal qt 55
+set xlabel "x"
+set ylabel "f(x)"
+set xtics 1
+set ytics 1
+set grid
+set size ratio 1
+set xrange [-5:5]
+set yrange [-5:5]
+plot f55(x) with lines
+
+set terminal qt 56
+set xlabel "x"
+set ylabel "f(x)"
+set xtics 1
+set ytics 1
+set grid
+set size ratio 1
+set xrange [-5:5]
+set yrange [-5:5]
+plot f56(x) with lines
+
+set terminal qt 57
+set xlabel "x"
+set ylabel "f(x)"
+set xtics 1
+set ytics 1
+set grid
+set size ratio 1
+set xrange [-5:5]
+set yrange [-5:5]
+plot f57(x) with lines
+
+set terminal qt 58
+set xlabel "x"
+set ylabel "f(x)"
+set xtics 1
+set ytics 1
+set grid
+set size ratio 1
+set xrange [-5:5]
+set yrange [-5:5]
+plot f58(x) with lines
+
+
+
+
+pause -1
+
+#EOF
