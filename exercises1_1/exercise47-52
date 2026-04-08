@@ -1,0 +1,80 @@
+#Define a function
+f47(x) = 3
+f48(x) = x**(-5)
+f49(x) = x**2 + 1
+f50(x) = x**2 + x
+f51(x) = x**3 + x
+f52(x) = x**4 + 3*(x**2) - 1
+
+set terminal qt 47
+set xlabel "x"
+set ylabel "f(x)"
+set xtics 1
+set ytics 1
+set grid
+set size ratio 1
+set xrange [-5:5]
+set yrange [-5:5]
+plot f47(x) with lines
+
+set terminal qt 48
+set xlabel "x"
+set ylabel "f(x)"
+set xtics 1
+set ytics 1
+set grid
+set size ratio 1
+set xrange [-5:5]
+set yrange [-5:5]
+plot f48(x) with lines
+
+set terminal qt 49
+set xlabel "x"
+set ylabel "f(x)"
+set xtics 1
+set ytics 1
+set grid
+set size ratio 1
+set xrange [-5:5]
+set yrange [-5:5]
+plot f49(x) with lines
+
+set terminal qt 50
+set xlabel "x"
+set ylabel "f(x)"
+set xtics 1
+set ytics 1
+set grid
+set size ratio 1
+set xrange [-5:5]
+set yrange [-5:5]
+plot f50(x) with lines
+
+set terminal qt 51
+set xlabel "x"
+set ylabel "f(x)"
+set xtics 1
+set ytics 1
+set grid
+set size ratio 1
+set xrange [-5:5]
+set yrange [-5:5]
+plot f51(x) with lines
+
+set terminal qt 52
+set xlabel "x"
+set ylabel "f(x)"
+set xtics 1
+set ytics 1
+set grid
+set size ratio 1
+set xrange [-5:5]
+set yrange [-5:5]
+plot f52(x) with lines
+
+
+
+
+pause -1
+
+#EOF
