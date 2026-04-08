@@ -1,14 +1,14 @@
 #Define a function
-f(x) = x/2.0
-g(x) = 1 + 4.0/x
+f(x) = 3/(x - 1)
+g(x) = 2/(x + 1)
 
 set terminal qt 0
 set xtics 1
 set ytics 1
 set grid
 set size ratio 1
-set xrange [-5:5]
-set yrange [-5:5]
+set xrange [-6:5]
+set yrange [-6:5]
 
 plot f(x) with lines, g(x) with lines
 
