@@ -1,0 +1,15 @@
+#Define a function
+f1(x) = 0.05*x**3
+
+set terminal qt 0
+set grid
+set xtics 1
+set ytics 1
+set size ratio 1
+set xrange [-5:5]
+set yrange [-5:5]
+
+plot f1(x) with lines
+
+pause -1
+#EOF
