@@ -1,15 +1,20 @@
 #Define a function
-f1(x) = 0.05*x**3
+g(x) = 0.05*x**3
+f1(x) = 0.25*(x+2)**2 + 1
+f2(x) = -x + 2
+
+f3(x) = f1(g(x))
+f4(x) = f2(g(x))
 
 set terminal qt 0
 set grid
 set xtics 1
 set ytics 1
 set size ratio 1
-set xrange [-5:5]
-set yrange [-5:5]
+# set xrange [-5:5]
+# set yrange [-5:5]
 
-plot f1(x) with lines
+plot [-5:5] g(x) with lines, [-5:0] f1(x) with lines, [0:5] f2(x) with lines, [-5:0] f3(x) with lines, [0:5] f4(x) with lines
 
 pause -1
 #EOF

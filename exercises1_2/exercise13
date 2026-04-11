@@ -1,0 +1,17 @@
+#Define a function
+f(x) = x**2
+g(x) = x + 1
+fg(x) = f(g(x))
+
+set terminal qt 0
+set grid
+set xtics 1
+set ytics 1
+set size ratio 1
+set xrange [-5:5]
+set yrange [-5:5]
+
+plot f(x) with lines, g(x) with lines, fg(x) with lines
+
+pause -1
+#EOF
