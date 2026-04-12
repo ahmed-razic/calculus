@@ -1,0 +1,15 @@
+#Define a function
+
+set terminal qt 0
+set parametric
+set grid
+set xtics 1
+set ytics 1
+set size ratio 1
+# set xrange [-5:5]
+# set yrange [-5:5]
+
+plot [0:2*pi] 5*sin(t), 5*cos(t) with lines, [0:2*pi] 5*sin(t) - 4, 5*cos(t) + 3 with lines
+
+pause -1
+#EOF
