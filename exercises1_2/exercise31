@@ -1,18 +1,17 @@
 #Define a function
-f(x) = sqrt(x)
-g(x) = sqrt(x + 0.81)
+# f(x) = sqrt(x)
+# g(x) = sqrt(x + 0.81)
 
 set terminal qt 0
 set grid
 set xtics 1
 set ytics 1
 set size ratio 1
-set xrange [-3:3]
-set yrange [-3:3]
-set arrow nohead from -3,0 to 3,0
-set arrow nohead from 0,-3 to 0,3
-plot g(x) with lines, f(x) with lines
-#replot [0 : 3] f(x) with lines
+set xrange [-1:4]
+set yrange [-1:4]
+set arrow nohead from -1,0 to 4,0
+set arrow nohead from 0,-1 to 0,4
+plot (x >= 0 ? sqrt(x) : 0) with lines, x >= - 0.81 ? sqrt(x + 0.81) : 0 with lines
 
 pause -1
 #EOF
