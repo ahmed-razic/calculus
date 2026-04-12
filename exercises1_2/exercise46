@@ -1,0 +1,17 @@
+#Define a function
+f(x) = (x**2)**(1.0/3.0) - 4
+
+set terminal qt 0
+set grid
+set xtics 1
+set ytics 1
+set size ratio 1
+set xrange [-10:10]
+set yrange [-5:5]
+# set arrow nohead from -10,0 to 10,0
+# set arrow nohead from 0,-5 to 0,5
+plot f(x) with lines
+
+pause -1
+#EOF
+
