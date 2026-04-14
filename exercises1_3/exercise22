@@ -1,0 +1,14 @@
+f1(x) = cos(x + 2*pi/3) - 2
+
+set terminal qt 0
+set grid
+set xtics pi/3
+set ytics 1
+set size ratio 1
+set xrange [-2*pi/3 : 4*pi/3]
+set yrange [-3 : 0]
+
+plot f1(x) with lines title "cos(x + 2*pi/3) - 2" lw 1
+
+pause -1
+#EOF
