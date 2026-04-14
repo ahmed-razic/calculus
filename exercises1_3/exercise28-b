@@ -1,0 +1,17 @@
+f1(x) = sin(x)
+f2(x) = 1/sin(x)
+
+set terminal qt 0
+set grid
+set xtics pi/2
+set ytics 1
+
+set format x '%.1Pπ'
+set size ratio 1
+set xrange [-pi : 2*pi]
+set yrange [-3 : 3]
+
+plot f1(x) with lines title "sin(x)" lw 1, f2(x) with lines title "1/sin(x)" lw 2
+
+pause -1
+#EOF
