@@ -1,4 +1,4 @@
-f1(x) = cos(x - pi/2.0)
+f1(x) = cos(x - pi/2)
 
 set terminal qt 0
 set grid

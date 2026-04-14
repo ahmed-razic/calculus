@@ -1,0 +1,14 @@
+f1(x) = sin(x - pi/4) + 1
+
+set terminal qt 0
+set grid
+set xtics pi/3
+set ytics 1
+set size ratio 1
+set xrange [pi/4 : 9*pi/4]
+set yrange [-1 : 2]
+
+plot f1(x) with lines title "sin(x - pi/4) + 1" lw 1
+
+pause -1
+#EOF
