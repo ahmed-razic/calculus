@@ -1,0 +1,15 @@
+f1(x) = -sin(pi*x/3.0)
+f2(x) = -cos(2*pi*x)
+
+set terminal qt 0
+set grid
+set xtics 1
+set ytics 1
+set size ratio 1
+set xrange [0:6]
+set yrange [-1:1]
+
+plot f1(x) with lines title "-sin(pi*x/3.0)" lw 1, f2(x) with lines title "-cos(2*pi*x)" lw 2
+
+pause -1
+#EOF
