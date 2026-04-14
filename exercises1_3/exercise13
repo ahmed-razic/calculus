@@ -1,13 +1,19 @@
+f1(x) = sin(x)
+f2(x) = sin(2*x)
+f3(x) = sin(0.5*x)
+
+
 set terminal qt 0
-set parametric
 set grid
 set xtics 1
 set ytics 1
 set size ratio 1
-# set xrange [-5:5]
-# set yrange [-5:5]
+set xrange [0:2*pi]
+set yrange [-2:2]
 
-plot [0:2*pi] 7*sin(t), 7*cos(t) with lines, [0:2*pi] 7*sin(t) - 2, 7*cos(t) -3 with lines
+plot f1(x) with lines title "sin(x)", \
+    f2(x) with lines title "sin(2*x)" dt 3 lw 3, \
+    f3(x) with lines title "sin(0.5*x)" lw 2 
 
 pause -1
 #EOF
