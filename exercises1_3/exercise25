@@ -1,0 +1,14 @@
+f1(t) = 1/cos(pi*t/2)
+
+set terminal qt 0
+set grid
+set xtics pi/4
+set ytics 1
+set size ratio 1
+set xrange [-3 : 3]
+set yrange [-3 : 3]
+
+plot f1(x) with lines title "1/cos(pi*t/2)" lw 1
+
+pause -1
+#EOF
