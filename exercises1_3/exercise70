@@ -23,14 +23,14 @@ set xtics 1
 set ytics 0.5
 # set format x '%.2Pπ'
 set size ratio 1
-set xrange [-4*pi : 4*pi]
-set yrange [-3 : 3]
+set xrange [0 : 5*pi]
+# set yrange [-3 : 3]
 
 plot f(x) with lines title "sin(x)" dt 1, \
-        f1(x) with lines title "B = 1" lw 1 \
-        f2(x) with lines title "B = 3" lw 2 \
-        f3(x) with lines title "B = 2pi" lw 3 \
-        f4(x) with lines title "B = 5pi" lw 4
+f1(x) with lines title "B = 1" lw 1, \
+f2(x) with lines title "B = 3" lw 2, \
+f3(x) with lines title "B = 2pi" lw 3, \
+f4(x) with lines title "B = 5pi" lw 4
 
 pause -1
 #EOF
