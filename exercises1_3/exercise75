@@ -1,0 +1,24 @@
+# A = 1
+B = 2*pi
+C = 0
+D = 0
+
+f(x) = sin(x)
+f1(x) = A1*sin(2*pi/B*(x - C)) + D
+
+
+
+set terminal qt 0
+set samples 1000
+set grid
+set xtics 1
+set ytics 1
+set format x '%.1Pπ'
+set size ratio 1
+set xrange [0 : 2*pi]
+set yrange [-10 : 10]
+
+plot for [i=1:100:10] (i/10.0)*sin(2*pi/B*(x - C)) + D with lines
+
+pause -1
+#EOF
