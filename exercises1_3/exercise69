@@ -1,5 +1,5 @@
 f1(x) = sin(x)
-f2(x) = 0.5*sin(pi*(x - 1)) + 0.5
+f2(x) = -(2/pi)*sin(pi/2*x) + 1/pi
 
 set terminal qt 0
 set grid
@@ -10,7 +10,7 @@ set size ratio 1
 set xrange [0 : 2*pi]
 set yrange [-1 : 1]
 
-plot f1(x) with lines title "sin(x)" lw 2, f2(x) with lines title "0.5*sin(pi*(x - 1)) + 0.5" lw 3
+plot f1(x) with lines title "sin(t)" lw 2, f2(x) with lines title "-(2/pi)*sin(pi/2*t) + 1/pi" lw 3
 
 pause -1
 #EOF
