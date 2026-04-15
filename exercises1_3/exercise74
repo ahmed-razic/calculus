@@ -6,16 +6,16 @@ D = 0
 f(x) = sin(x)
 
 A1 = 0
-f1(x) = A*sin(2*pi/B*(x - C)) + D1
+f1(x) = A1*sin(2*pi/B*(x - C)) + D
 
 A2 = 1
-f2(x) = A*sin(2*pi/B*(x - C)) + D2
+f2(x) = A2*sin(2*pi/B*(x - C)) + D
 
 A3 = 3
-f3(x) = A*sin(2*pi/B*(x - C)) + D3
+f3(x) = A3*sin(2*pi/B*(x - C)) + D
 
 A4 = -2
-f4(x) = A*sin(2*pi/B*(x - C)) + D4
+f4(x) = A4*sin(2*pi/B*(x - C)) + D
 
 set terminal qt 0
 set samples 1000
