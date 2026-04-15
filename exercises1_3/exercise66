@@ -1,0 +1,39 @@
+f1(x) = sin(x)
+f2(x) = x
+
+set terminal qt 0
+set grid
+# set xtics pi/4
+# set ytics 1
+# set format x '%.2Pπ'
+set size ratio 1
+set xrange [-pi/4 : pi/4]
+set yrange [-1 : 1]
+
+plot f1(x) with lines title "y=sin(x)" lw 1, f2(x) with lines title "y=x" lw 2
+
+set terminal qt 1
+set grid
+# set xtics pi/4
+# set ytics 1
+# set format x '%.2Pπ'
+set size ratio 1
+set xrange [-0.2 : 0.2]
+set yrange [-0.2 : 0.2]
+
+plot f1(x) with lines title "y=sin(x)" lw 1, f2(x) with lines title "y=x" lw 2
+
+set terminal qt 2
+set grid
+set angles degrees
+# set xtics pi/4
+# set ytics 1
+# set format x '%.2Pπ'
+# set size ratio 1
+set xrange [-30 : 30]
+set yrange [-30 : 30]
+
+plot f1(x) with lines title "y=sin(x)" lw 1, f2(x) with lines title "y=x" lw 2
+
+pause -1
+#EOF
