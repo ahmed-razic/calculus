@@ -1,21 +1,21 @@
 A = 2
-B = 2*pi
-#C = 0
+# B = 1
+C = 0
 D = 0
 
 f(x) = sin(x)
 
-C1 = pi/2
-f1(x) = A*sin(2*pi/B*(x - C1)) + D
+B1 = pi/2
+f1(x) = A*sin(2*pi/B1*(x - C)) + D
 
-C2 = pi
-f2(x) = A*sin(2*pi/B*(x - C2)) + D
+B2 = pi
+f2(x) = A*sin(2*pi/B2*(x - C)) + D
 
-C3 = -pi
-f3(x) = A*sin(2*pi/B*(x - C3)) + D
+B3 = 2*pi
+f3(x) = A*sin(2*pi/B3*(x - C)) + D
 
-C4 = 2*pi
-f4(x) = A*sin(2*pi/B*(x - C4)) + D
+B4 = 4*pi
+f4(x) = A*sin(2*pi/B4*(x - C)) + D
 
 set terminal qt 0
 set samples 1000
@@ -24,14 +24,14 @@ set xtics 1
 set ytics 0.5
 set format x '%.1Pπ'
 set size ratio 1
-set xrange [-2*pi : 2*pi]
-set yrange [-2 : 2]
+set xrange [0 : 4*pi]
+set yrange [-3 : 3]
 
 plot f(x) with lines title "sin(x)" dt 3, \
-f1(x) with lines title "C =  pi/2" lw 1, \
-f2(x) with lines title "C =  pi" lw 2, \
-f3(x) with lines title "C = -pi" lw 3, \
-f4(x) with lines title "C =  2pi" lw 4
+f1(x) with lines title "B = pi/2" lw 1, \
+f2(x) with lines title "B = pi" lw 2, \
+f3(x) with lines title "B = 2pi" lw 3, \
+f4(x) with lines title "B = 4pi" lw 4
 
 pause -1
 #EOF
