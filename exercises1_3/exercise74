@@ -1,0 +1,37 @@
+A = 2
+B = 2*pi
+C = 0
+D = 0
+
+f(x) = sin(x)
+
+A1 = 0
+f1(x) = A*sin(2*pi/B*(x - C)) + D1
+
+A2 = 1
+f2(x) = A*sin(2*pi/B*(x - C)) + D2
+
+A3 = 3
+f3(x) = A*sin(2*pi/B*(x - C)) + D3
+
+A4 = -2
+f4(x) = A*sin(2*pi/B*(x - C)) + D4
+
+set terminal qt 0
+set samples 1000
+set grid
+set xtics 1
+set ytics 0.5
+set format x '%.1Pπ'
+set size ratio 1
+set xrange [0 : 2*pi]
+set yrange [-5 : 5]
+
+plot f(x) with lines title "sin(x)" dt 3, \
+f1(x) with lines title "D =  0" lw 1, \
+f2(x) with lines title "D =  1" lw 2, \
+f3(x) with lines title "D =  3" lw 3, \
+f4(x) with lines title "D = -2" lw 4
+
+pause -1
+#EOF
