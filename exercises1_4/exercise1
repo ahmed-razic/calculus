@@ -1,0 +1,15 @@
+set terminal qt 0
+f1(x) = 2**x;
+f2(x) = 4**x;
+f3(x) = 3**(-x)
+f4(x) = 5**(-x)
+
+set grid
+set xrange [-2 : 2]
+set size ratio 1
+set arrow nohead from 0,0 to 0,25
+
+plot f1(x) with lines lw 1 title "2**x", f2(x) with lines lw 2 title "4**x", f3(x) with lines lw 3 title "3**(-x)", f4(x) with lines lw 4 title "5**(-x)"
+
+pause -1
+#EOF
