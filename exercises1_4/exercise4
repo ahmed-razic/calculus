@@ -1,0 +1,15 @@
+set terminal qt 0
+f1(x) = 3**(-x);
+f2(x) = -3**x;
+f3(x) = 3**x;
+
+
+set grid
+set xrange [-2 : 2]
+set arrow nohead from 0,-8 to 0, 8
+set arrow nohead from -3,0 to 3, 0
+
+plot f1(x) with lines lw 1 title "3**(-x)", f2(x) with lines lw 2 title "-3**x", f3(x) with lines dt 3 lw 2 title "3**x"
+
+pause -1
+#EOF

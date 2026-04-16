@@ -1,0 +1,14 @@
+set terminal qt 0
+f1(x) = exp(x);
+f2(x) = exp(-x);
+
+
+set grid
+set xrange [-2 : 2]
+set size ratio 1
+set arrow nohead from 0,0 to 0,8
+
+plot f1(x) with lines lw 1 title "e^x", f2(x) with lines lw 2 title "e^-x"
+
+pause -1
+#EOF
