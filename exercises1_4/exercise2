@@ -1,0 +1,23 @@
+
+
+set terminal qt 0
+f1(x) = 2**x;
+f2(x) = 2**(-x)
+set grid
+set xrange [-3 : 3]
+set arrow nohead from 0,0 to 0, 10
+plot f1(x) with lines lw 2, f2(x) with lines lw 3
+
+set terminal qt 1
+f3(x) = 3**x;
+f4(x) = 8**x;
+f5(x) = 2**(-x)
+f6(x) = 4**(-x)
+
+set grid
+set xrange [-1.2 : 1.2]
+set arrow nohead from 0,0 to 0, 14
+plot f3(x) with lines lw 1 title "3**x", f4(x) with lines lw 2 title "8**x", f5(x) with lines lw 3 title "2**(-x)", f6(x) with lines lw 4 title "4**(-x)"
+
+pause -1
+#EOF
