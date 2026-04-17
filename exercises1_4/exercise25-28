@@ -19,6 +19,5 @@ plot    f1(x) with lines lw 1 title "2**x - 5",\
         f2(x) with lines lw 1 title "exp(x) - 4", \
         f3(x) with lines lw 3 title "3**x - 0.5", \
         f4(x) with lines lw 3 title "3 - 2**(-x)";
-
 pause -1;
 #EOF
