@@ -534,6 +534,8 @@ degrees of freedom    (FIT_NDF)                        : 19999
 rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 2.2205e-16
 variance of residuals (reduced chisquare) = WSSR/ndf   : 4.93063e-32
 
+
 Final set of parameters            Asymptotic Standard Error
 =======================            ==========================
 x0              = 38.1145          +/- 3.174e-17    (8.328e-17%)
+
