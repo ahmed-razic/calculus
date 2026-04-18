@@ -1,9 +1,9 @@
-f1(x) = exp(0.0375*x) - 2;
+f1(x) = 6250*exp(0.0275*x);
 
 set terminal qt 0;
 set grid;
-set xtics 1;
-# set ytics 1;
+set xtics 1
+# set ytics 1
 set xrange [0 : 30];
 # set yrange [-6 : 6];
 
