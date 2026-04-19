@@ -20,6 +20,6 @@ set label sprintf("f(x)=%.2f at x=%.2f", yval, x0) at x0, yval offset 1,1
 set object circle at x0,f1(x0) size 0.3 fc rgb "red"
 
 # Plot function and overlay just one point
-plot f1(x) with lines lw 1 title "6.6*(0.5)**(x/14)"
+plot f1(x) with lines lw 1 title "6.6*(0.5)**(x/14.0)"
 
 pause -1;
