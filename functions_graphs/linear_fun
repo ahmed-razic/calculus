@@ -1,0 +1,27 @@
+# linear functions y = mx + b, m<0, m>0, m=0 and m=undefined
+
+f1(x) = -5*x + 2
+f2(x) = -2*x
+f3(x) = -1/2*x
+f4(x) = '-'
+f5(x) = 1/2*x
+f6(x) = x
+f7(x) = 2*x
+f8(x) = 5*x + 2
+
+set grid
+set xrange [-10:10]
+set yrange [-10:10]
+
+plot f1(x) with lines lc "red" lw 2, \
+    f2(x) with lines lc "red" lw 2, \
+    f3(x) with lines lc "red" lw 2, \
+    f4(x) with lines lc "blue" lw 3 using 1 : 2 3 -10 3 10, \
+    f5(x) with lines lc "yellow" lw 3, \
+    f6(x) with lines lc "green" lw 4, \
+    f7(x) with lines lc "green" lw 4 \
+    # f8(x) with lines lc "green" lw 4
+
+pause -1
+
+# EOF
