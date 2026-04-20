@@ -1,0 +1,5 @@
+// linear functions y = mx + b, m<0, m>0, m=0 and m=undefined
+
+f1(x) = 2x + 1
+f2(x) = 1/2*x - 2
+f3(x) = 0*x - 3
