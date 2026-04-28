@@ -7,7 +7,7 @@ f4(x) = x**(2.0/7)
 
 
 set xrange [-2:2]
-set yrange [-2:2]
+set yrange [0:4]
 set sample 2000
 set grid
 set size ratio 1
