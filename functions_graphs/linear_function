@@ -1,0 +1,29 @@
+# linear functions y = mx + b, m<0, m>0, m=0 and m=undefined
+f1(x) = -10*x + 1
+f2(x) = -2*x + 1
+f3(x) = -1.0/2*x - 2
+f4(x) = 3
+f5(x) = 1.0/2*x - 2
+f6(x) = 2*x + 1
+f7(x) = 10*x + 1
+
+set xrange [-10:10]
+set yrange [-10:10]
+set grid
+set arrow nohead from -10,0 to 10, 0 dt 3
+set arrow nohead from 0,-10 to 0, 10 dt 3
+
+plot f1(x) with lines title "m=-10", \
+    f2(x) with lines title "m=-2", \
+    f3(x) with lines title "m=-1/2", \
+    f4(x) with lines title "horizontal line m=0, y=3" dt 3 lw 3, \
+    f5(x) with lines title "m=1/2", \
+    f6(x) with lines title "m=-", \
+    f7(x) with lines title "m=10", \
+    "-" using 1:2 with lines title "vertical line m=inf, x=3" dt 3 lw 3 
+    3 -10 
+    3 10 
+    e,
+
+pause -1
+# EOF
