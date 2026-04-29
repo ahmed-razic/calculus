@@ -1,0 +1,17 @@
+# power functions y = x**(2/(2k-1))
+
+f1(x) = (2*x**2 - 3)/(7*x+4)
+
+set xrange [-15:15]
+set yrange [-15:15]
+set sample 1500
+set grid
+set size ratio 1
+set arrow nohead from -15,0 to 15, 0 dt 3
+set arrow nohead from 0,-15 to 0, 15 dt 3
+
+plot f1(x) with lines title "(2*x**2 - 3)/(7*x+4)"
+
+pause -1
+
+# EOF

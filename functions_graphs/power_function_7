@@ -1,4 +1,4 @@
-# power functions y = x**(2k-1)
+# power functions y = x**(2/(2k-1))
 
 f1(x) = x**(2.0/1)
 f2(x) = x**(2.0/3)
