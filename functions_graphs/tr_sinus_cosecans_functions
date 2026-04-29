@@ -1,0 +1,20 @@
+# power functions y = x**(2/(2k-1))
+
+f1(x) = cos(x)
+f2(x) = 1/cos(x)
+
+set xrange [-2*pi:2*pi]
+set yrange [-3:3]
+set sample 1000
+set grid
+set xtics ("-π/2" -pi/2, "-π" -pi, "-3π/2" -3*pi/2, "-2π" -2*pi, "0" 0, "π/2" pi/2, "π" pi, "3π/2" 3*pi/2, "2π" 2*pi)
+set size ratio 1
+set arrow nohead from -10,0 to 10, 0 dt 3
+set arrow nohead from 0,-10 to 0, 10 dt 3
+
+
+plot f1(x) with lines title "cos(x)", f2(x) with lines title "1/cos(x)"
+
+pause -1
+
+# EOF
