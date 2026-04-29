@@ -2,13 +2,15 @@
 
 f1(x) = (2*x**2 - 3)/(7*x+4)
 
-set xrange [-15:15]
-set yrange [-15:15]
+set xrange [-5:5]
+set yrange [-5:5]
 set sample 1500
 set grid
 set size ratio 1
-set arrow nohead from -15,0 to 15, 0 dt 3
-set arrow nohead from 0,-15 to 0, 15 dt 3
+set arrow nohead from -5,0 to 5, 0 dt 3
+set arrow nohead from 0,-5 to 0, 5 dt 3
+
+set arrow nohead from -4.0/7,-5 to -4.0/7, 5
 
 plot f1(x) with lines title "(2*x**2 - 3)/(7*x+4)"
 
