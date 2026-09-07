@@ -3,6 +3,7 @@ B = 2*pi
 C = 0
 D = 0
 
+
 f(x) = sin(x)
 f1(x) = A1*sin(2*pi/B*(x - C)) + D
 
